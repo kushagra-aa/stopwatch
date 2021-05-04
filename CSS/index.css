@@ -74,7 +74,7 @@ h2 {
   background: rgb(187, 187, 252);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   h2 {
     font-size: 2rem;
     margin-top: 16%;
