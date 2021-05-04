@@ -82,6 +82,32 @@ h2 {
   .con {
     left: 15%;
     top: 20%;
+    width: 75%;
+  }
+
+  #hero {
+    display: none;
+  }
+
+  #time {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 12rem;
+    height: 4rem;
+    margin: 1rem;
+    margin-left: 3%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  h2 {
+    font-size: 2rem;
+    margin-top: 16%;
+  }
+  .con {
+    left: 15%;
+    top: 20%;
     width: 70%;
   }
 
