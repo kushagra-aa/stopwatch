@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/index.css" />
-    <script src="JS/index.js"></script>
     <title>StopWatch</title>
   </head>
   <body>
     <h2>StopWatch!</h2>
     <div class="con">
-      <div id="hero">
+      <!-- <div id="hero">
         <svg
           id="herosvg"
           xml:space="preserve"
@@ -65,15 +64,16 @@
             ></path>
           </g>
         </svg>
-      </div>
+      </div> -->
       <div id="Watch">
         <div id="time">00:00:00:0000</div>
         <div class="buttons">
           <button class="btn" id="start" onclick="go();">Start</button>
-          <button class="btn" id="stop" onclick="no();">Stop</button>
-          <button class="btn" id="r" onclick="re();">Reset</button>
+          <button class="btn" id="stop" onclick="no();" disabled>Stop</button>
+          <button class="btn" id="r" onclick="re();" disabled>Reset</button>
         </div>
       </div>
     </div>
+    <script src="JS/index.js"></script>
   </body>
 </html>

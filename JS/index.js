@@ -11,7 +11,7 @@ function Stopwatch() {
         Dhr = 0;
 
     stopWatchF = function () {
-        console.log("")
+
         msec++;
 
         if (msec / 1000 == 1) {
@@ -26,13 +26,6 @@ function Stopwatch() {
                 }
             }
         }
-        // if (msec < 1000) {
-
-        //     Dmsec = "000" + msec.toString();
-
-        //     if (msec < 100) {
-
-        //         Dmsec = "00" + msec.toString();
 
         if (msec < 10)
             Dmsec = "000" + msec.toString();
@@ -65,7 +58,7 @@ function Stopwatch() {
             throw new Error("Stopwatch has already started!");
         }
 
-        console.log("Stopwatch Started");
+        // console.log("Stopwatch Started");
         running = true;
 
         interval = window.setInterval(stopWatchF, 1);
@@ -92,28 +85,33 @@ function Stopwatch() {
         window.clearInterval(interval);
     };
 
-    Object.defineProperty(this, "duration", {
-        get: function () {
-            return duration;
-        },
-    });
 }
 
 let sbtn = document.getElementById("start");
 let ssbtn = document.getElementById("stop");
 let rbtn = document.getElementById("r");
-// let ss   btn = document.querySelectorAll('.stop');
+
 const sw = new Stopwatch();
 
 go = function () {
     sw.start();
+    ssbtn.disabled = false;
+    rbtn.disabled = false;
+    sbtn.disabled = true;
 };
 
 no = function () {
     sw.stop();
-    console.log(sw.duration);
+
+    sbtn.disabled = false;
+    ssbtn.disabled = true;
+
 };
 
 re = function () {
     sw.reset();
+    sbtn.disabled = false;
+    ssbtn.disabled = true;
+    rbtn.disabled = true;
+
 };
