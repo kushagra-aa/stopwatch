@@ -8,7 +8,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background: rgb(253, 101, 0);
+  background: rgb(206, 82, 0);
 }
 h2 {
   height: auto;
@@ -66,15 +66,15 @@ h2 {
 }
 
 #start {
-  background: #43a047;
+  background: #347e38;
 }
 
 #stop {
-  background: #e53935;
+  background: #be2d2b;
 }
 
 #r {
-  background: #3f51b5;
+  background: #2e3b85;
 }
 
 @media only screen and (max-width: 768px) {
